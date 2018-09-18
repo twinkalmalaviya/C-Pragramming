@@ -6,12 +6,12 @@ int count_number_of_one(int n)
   while(n)
   {
    count+=n&1;
-   n<<1;
+   n>>=1;
   }
   return count;
 }
 int main(void) {
- int num= 19;
+ int num= 2;
  printf("number of 1 in num =%d\n",count_number_of_one(num));
  return 0;
 }
